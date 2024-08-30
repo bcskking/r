@@ -1,0 +1,271 @@
+<html>
+<head>
+    <title>South Indian Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(Image/Background_image.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .header h1 {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0;
+        }
+        .view-orders {
+            padding: 10px 20px;
+            background-color: #ff9800; 
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .view-orders:hover {
+            background-color: #e68a00; 
+        }
+        .menu-section {
+            margin: 20px 0;
+        }
+        .menu-section h2 {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 0 10px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ffffff;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+        .menu-item h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #ffeb3b; 
+        }
+        .menu-item .price {
+            float: right;
+            font-weight: bold;
+            color: #76ff03; 
+        }
+        .menu-item p {
+            margin: 5px 0;
+            color: #ffffff; 
+        }
+        .menu-options {
+            margin-top: 10px;
+        }
+        .menu-options a {
+            margin-right: 10px;
+            color: #03a9f4; 
+            text-decoration: none;
+        }
+        .menu-options a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="view_orders.html" class="view-orders">View Orders</a>
+        <h1>South Indian Restaurant Menu</h1>
+    </div>
+
+    <div class="menu-section">
+        <h2>Breakfast</h2>
+        <div class="menu-item">
+            <img src="Image/idli.jpeg" alt="Idli">
+            <div>
+                <h3>Idli <span class="price">₹50</span></h3>
+                <p>Steamed rice cakes served with sambar and coconut chutney.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Idli&price=50">Add to Cart</a>
+                    <a href="description.html?item=Idli">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/dosa.jpeg" alt="Dosa">
+            <div>
+                <h3>Dosa <span class="price">₹70</span></h3>
+                <p>Thin, crispy crepe made from fermented rice and lentil batter, served with sambar and chutneys.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Dosa&price=70">Add to Cart</a>
+                    <a href="description.html?item=Dosa">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Vada.jpeg" alt="Vada">
+            <div>
+                <h3>Vada <span class="price">₹40</span></h3>
+                <p>Fried savory donut made from black gram flour, served with sambar and chutneys.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Vada&price=40">Add to Cart</a>
+                    <a href="description.html?item=Vada">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="/Image/ven Pongal.jpeg" alt="Pongal">
+            <div>
+                <h3>Pongal <span class="price">₹60</span></h3>
+                <p>Comforting dish made with rice and moong dal, seasoned with black pepper, ghee, and curry leaves.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Pongal&price=60">Add to Cart</a>
+                    <a href="description.html?item=Pongal">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Upma.jpeg" alt="Upma">
+            <div>
+                <h3>Upma <span class="price">₹45</span></h3>
+                <p>Thick porridge made from semolina, seasoned with mustard seeds, curry leaves, and vegetables.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Upma&price=45">Add to Cart</a>
+                    <a href="description.html?item=Upma">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Appam.jpg" alt="Appam">
+            <div>
+                <h3>Appam <span class="price">₹55</span></h3>
+                <p>Soft, fluffy rice pancakes with crispy edges, typically served with coconut milk or stew.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Appam&price=55">Add to Cart</a>
+                    <a href="description.html?item=Appam">See Description</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Main Course</h2>
+        <div class="menu-item">
+            <img src="Image/Meals (Thali).jpg" alt="Meals">
+            <div>
+                <h3>Meals (Thali) <span class="price">₹50</span></h3>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Sambar&price=50">Add to Cart</a>
+                    <a href="description.html?item=Sambar">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Biryani.jpg" alt="Biryani">
+            <div>
+                <h3>Biryani <span class="price">₹40</span></h3>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Rasam&price=40">Add to Cart</a>
+                    <a href="description.html?item=Rasam">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Lemon Rice.jpeg" alt="Lemon Rice">
+            <div>
+                <h3>Lemon Rice <span class="price">₹150</span></h3>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Biryani&price=150">Add to Cart</a>
+                    <a href="description.html?item=Biryani">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Coconut Rice.jpeg" alt="Coconut Rice">
+            <div>
+                <h3>Coconut Rice <span class="price">₹100</span></h3>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Kurma&price=100">Add to Cart</a>
+                    <a href="description.html?item=Kurma">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Puliyodharai (Tamarind Rice).jpeg" alt="Puliyodharai">
+            <div>
+                <h3>Puliyodharai (Tamarind Rice)<span class="price">₹180</span></h3>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Chettinad%20Chicken&price=180">Add to Cart</a>
+                    <a href="description.html?item=Chettinad%20Chicken">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Parotta.jpg" alt="Parotta">
+            <div>
+                <h3>Parotta<span class="price">₹80</span></h3>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Masala%20Dosa&price=80">Add to Cart</a>
+                    <a href="description.html?item=Masala%20Dosa">See Description</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <img src="Image/Payasam.jpg" alt="Payasam">
+            <div>
+                <h3>Payasam <span class="price">₹60</span></h3>
+                <p>Sweet pudding made with milk, sugar, rice or vermicelli, flavored with cardamom and saffron.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Payasam&price=60">Add to Cart</a>
+                    <a href="description.html?item=Payasam">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Laddu.webp" alt="Laddu">
+            <div>
+                <h3>Laddu <span class="price">₹50</span></h3>
+                <p>Round, sweet balls made from flour, sugar, and ghee, often flavored with cardamom and nuts.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Laddu&price=50">Add to Cart</a>
+                    <a href="description.html?item=Laddu">See Description</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Image/Halwa.jpeg" alt="Halwa">
+            <div>
+                <h3>Halwa <span class="price">₹70</span></h3>
+                <p>Rich, dense sweet made from semolina, ghee, and sugar, often flavored with saffron and nuts.</p>
+                <div class="menu-options">
+                    <a href="add_to_cart.html?item=Halwa&price=70">Add to Cart</a>
+                    <a href="description.html?item=Halwa">See Description</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

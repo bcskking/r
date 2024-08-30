@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>View Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #dee2e6;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f1f1;
+        }
+        .total {
+            font-weight: bold;
+            text-align: right;
+        }
+        .place-order {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .place-order:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Your Order</h1>
+
+    <table>
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Idli</td>
+            <td>₹50</td>
+        </tr>
+        <tr>
+            <td>Dosa</td>
+            <td>₹70</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="total">Total: ₹120</td>
+        </tr>
+    </table>
+
+    <a href="order_confirmed.html" class="place-order">Place Order</a>
+
+</body>
+</html>
